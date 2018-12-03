@@ -1,0 +1,39 @@
+float triangleX;
+float xspeed = 2;
+
+void setup() {
+  size(400,400);
+  background(0);
+  triangleX = 0;
+}
+
+void draw() {
+  //Default Pizza
+  background(0);
+  fill(191,141,60);
+  noStroke();
+  triangle(triangleX,height/2, triangleX+45, height/4, triangleX + 90, height/2);
+  
+  triangleX = triangleX + xspeed;
+  
+  if (triangleX + 90 > width || triangleX <0){
+    //Bounce
+    xspeed = xspeed * -1;
+  }
+    //Growing Pizza Red
+if(mousePressed){
+  background(0);
+fill(255,35,1);
+  noStroke();
+  triangle(triangleX,height/2, triangleX+45, triangleX, triangleX + 90, height/2);
+  
+}
+//Growing Pizza Yellow
+if(keyPressed){
+  background(0);
+fill(255,250,138);
+  noStroke();
+  triangle(triangleX,height/3, triangleX+45, triangleX, triangleX + 90, height/3);
+
+}
+}
