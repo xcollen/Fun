@@ -1,0 +1,47 @@
+void setup(){
+ size(475,475);
+ background(#FFFA9D); 
+}
+
+void draw(){
+  //Balloon Cannon (COLOR THE CANNON)
+  colorMode(HSB,360,100,100,100);
+  fill(350,9,38,100);
+ triangle(430,389,398,450,460,450);
+ fill(236,80,88,100);
+  quad(430,389,404,438,340,323,375,300);
+  fill(236,84,36,100);
+  arc(357.5,310,40,35,PI/-6,QUARTER_PI+HALF_PI,OPEN);
+  
+  //Balloons
+  //B1(Green)
+  colorMode(RGB,255,255,255,100);
+  noFill();
+  bezier(359,315,388,198,291,340,328,219);
+  fill(80,244,66,100);
+  ellipse(328,219,35,45);
+  
+  //B2(RED)
+  noFill();
+  bezier(273,271,233,179,205,347,182,212);
+  fill(229,43,43,100);
+  ellipse(182,212,35,45);
+  
+ //B3(BLUE)
+ noFill();
+  bezier(120,317,131,179,51,350,111,193);
+  fill(88,244,234,100);
+  ellipse(111,193,35,45);
+  
+  //B4(YELLOW)
+  noFill();
+  bezier(198,187,282,156,177,122,294,97);
+  fill(255,157,0,100);
+  ellipse(294,97,35,45);
+  
+  //B5(PURPLE)
+  noFill();
+  bezier(152,154,158,99,71,142,104,72);
+ fill(43,52,229,100);
+  ellipse(104,72,35,45);
+}
