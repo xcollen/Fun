@@ -1,0 +1,38 @@
+//Boolean
+boolean a=true;
+//Circle Colors
+int red;
+int green;
+int blue;
+
+float w=500;
+float h=500;
+
+
+void setup(){
+  size(500,500);
+  frameRate(35);
+ 
+}
+
+void draw(){
+    red = (red + 3) % 256 ;
+  green = (green + 1) % 256;
+  blue = (blue + 4) % 256;
+  fill(red, green, blue);
+    //Circles
+  w = (w + 1) % (height);
+  h = (h + 1) % (width);
+  //Bottom Left Circle
+  ellipse(w % height/3 ,h + 50 % width/3, w % height, h % width);
+  
+  //Top Right Circle
+  ellipse(w + 50 % height/3 ,h % width/3, w % height, h % width);
+  
+  //Middle circle
+  ellipse(w,h,w,h);
+  
+ println(w % height);
+ println(h % width);
+ println(frameCount);
+}
