@@ -1,1 +1,1 @@
-# Fun
+# MAGD150-Assignments
