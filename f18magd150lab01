@@ -1,0 +1,84 @@
+void setup(){ 
+  //Space Background
+  background(8);
+  size(600,600);
+  //Planet #1
+  fill(170);
+  ellipse(300,655,700,300);
+  
+  //Moon#1
+  fill(150);
+  ellipse(75,75,100,100);
+  //Moon Crators
+  //Bottom Right
+  fill(129);
+  ellipse(98,86,33,50);
+  //Top Mid
+  fill(119);
+  ellipse(72,45,44,28);
+  //Left
+  fill(123);
+  ellipse(52,80,25,35);
+  //Bottom Mid
+  fill(121);
+  ellipse(64,110,28,21);
+  
+  //Rocketship
+  fill(120);
+  rect(249,195,100,305);
+  //Top Box
+  fill(120);
+  rect(249,150,100,50);
+  //Point
+  fill(120);
+  strokeWeight(1.0);
+  strokeJoin(MITER);
+  beginShape();
+  vertex(249,150);
+  vertex(300,50);
+  vertex(349,150);
+  endShape();
+  //Window 
+  fill(150);
+  ellipse(300,120,50,50);
+  //Blast
+   fill(120);
+  strokeWeight(1.0);
+  strokeJoin(MITER);
+  beginShape();
+  //P 1
+  vertex(475,500);
+  //P 2
+  vertex(125,500);
+  //P 4
+  vertex(249,325);
+  //P 5
+  vertex(300,570);
+  //P6
+  vertex(349,325);
+  //P8
+  vertex(475,500);
+  endShape();
+  //Door
+  fill(115);
+  rect(256,200,86,104);
+  
+  //Planet 2
+  fill(130);
+ ellipse(600,200,370,500);
+  fill(120);
+ ellipse(600,200,220,410);
+ fill(120);
+ ellipse(600,220,120,110);
+  //Planet 3
+  fill(100);
+  ellipse(50,300,200,270);
+    fill(90);
+  ellipse(70,300,140,190);
+    fill(90);
+  ellipse(70,300,40,60);
+  
+}
+
+void draw() { 
+}
