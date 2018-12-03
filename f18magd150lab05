@@ -1,0 +1,84 @@
+boolean door = false;
+boolean portal = false;
+color doorColor, portalColor;
+color bgColor;
+int rectX,rectY,circX,circY;
+
+void setup(){
+  size(500,500);
+    doorColor = color(255,0,0);
+    portalColor = color(0,0,255);
+    bgColor = color(255);
+    rectX = width/6;
+    rectY = height/3;
+    circX = 383;
+    circY = 266;
+}
+
+
+void draw(){
+//update(mouseX, mouseY);
+background(bgColor);
+//Door
+fill(doorColor);
+rect(rectX, rectY, 100,200);
+
+//Portal
+fill(portalColor);
+ellipse(circX, circY,100,200);
+//Door Text
+noStroke();
+fill(255);
+textSize(30);
+text("Door", 98,266);
+
+//Portal Text
+noStroke();
+fill(255);
+textSize(30);
+text("Portal", 343,266);}
+
+
+/*void update (int x, int y){
+   if (overdoor(rectX, rectY,100,200)) {
+     door = true;
+     portal = false;
+    } 
+    else if (overportal(circX, circY,100,200)){
+    door = true;
+    portal = false;
+  } else {
+    portal = door = false;
+  }
+}
+  
+
+void mousePressed() {
+  if (door) {
+    bgColor = portalColor;
+  }
+  if (portal) {
+    bgColor = doorColor;
+
+
+  }
+}
+/*boolean overdoor(int rectX, int rectY,int rectX,int rectY)
+  if (mouseX >= rectX && mouseX <= rectX+100 && 
+      mouseY >= rectY && mouseY <= rectY+200) {
+        return true;
+      } else{
+        return false;
+      }
+}
+
+boolean overportal(ellipse(circX, circY,100,200); {
+  float disX = x - mouseX;
+  float disY = y - mouseY;
+  if (sqrt(sq(circX) + sq(circY)) < diameter/2 ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+*/
